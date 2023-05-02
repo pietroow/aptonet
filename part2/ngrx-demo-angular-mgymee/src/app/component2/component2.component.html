@@ -1,0 +1,13 @@
+<div>
+  <input type="text" #name placeholder="Your Name" />
+  <input type="text" #gender placeholder="Gender" />
+  <button (click)="addToStore(name.value, gender.value)">Add to Table</button>
+</div>
+
+<div>
+  <input type="text" #nameUpdate placeholder="Your Name" />
+  <input type="text" #genderUpdate placeholder="Gender" />
+  <button (click)="updateToStore(nameUpdate.value, genderUpdate.value)">
+    Update to Table
+  </button>
+</div>
